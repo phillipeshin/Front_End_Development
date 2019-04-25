@@ -1,0 +1,175 @@
+/* Reusable Utility Classes */
+img.resize {
+    width: 200px; /* you can use % */
+    height: auto;
+}
+
+.buttonContainer button {
+    padding: 5px 6px;
+    font-size: 15px;
+    width: 15%;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.buttonContainer button:first-of-type {
+    background-color: red;
+}
+
+.buttonContainer button:last-of-type {
+    background-color: grey;
+}
+
+/* Header Container */
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.headercontainer {
+    background: url("./background.jpg") no-repeat;
+    background-size: cover;
+    background-position: 40% 80%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 3px;
+}
+.headercontainer ul {
+    margin: 0;
+}
+
+.headercontainer li {
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+}
+
+.navbar-brand {
+    width: 30px;
+    height: 30px;
+}
+.navbar-brand img {
+    width: 100%;
+}
+
+.hero_content {
+    width: 80%;
+    margin: 83px auto 98px;
+}
+
+/* Main Content */
+.main_content {
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+.filter_content {
+    width: 20%;
+    float: left;
+    font-family: 'Raleway', sans-serif;    
+    border: 1px solid #ddd;
+}
+
+.filter_list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.filter_content {
+    text-align: center;
+}
+
+.filter_list:hover {
+    box-shadow: 0 0 15px 5px rgba(39,43,55,0.15);
+}
+
+.filter_list li {
+    list-style: none;
+    padding: 10px;
+}
+
+.filter_list li.active {
+    color: red;
+}
+
+.video_container {
+    width: 72%;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+}
+
+.video_search input {
+    width: 90%;
+    padding: 3px;
+    border: 1px solid #ddd;
+}
+
+.video_list_item {
+    width: 40%;
+    float: left;
+    margin-right: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;    
+}
+
+.video_item_wrapper {
+    padding: 10px;
+}
+
+.video_list_item {
+    box-shadow:0 0 15px 5px rgba(39,43,55,0.15);
+}
+.video_list_item h3 {
+    color: black;
+}
+
+.video_item_desc {
+    color: black;
+}
+
+.thumbnailcontainer img {
+    width: 100%;
+}
+
+.video_item_wrapper .buttonContainer button {
+    width: 40%;
+}
+@media screen and (max-width: 750px) {
+    .filter_content {
+        display: none;
+    }
+    .video_container {
+        width: 100%;
+        float: none;
+    }
+    .buttonContainer button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .headercontainer li{
+        float: none;
+        text-align: center;
+    }
+    .navbar-brand {
+        width: 70px;
+        height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video_searh input {
+        width: 100%;
+    }
+    .video_list_item {
+        width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
