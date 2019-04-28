@@ -1,0 +1,80 @@
+* ,html, body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: 2cbac9;
+    height: 150px;
+    line-height: 175px;
+}
+header nav {
+    float: right;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    padding-right: 100px;
+    font-weight: bold;
+    color: black;
+    transition: all 0.5s ease-in;
+}
+
+.logo img {
+    margin-top: 0px;
+    padding-right: 20px;
+    float: left;
+    height: 150px;
+    width: 300px;
+}
+header nav ul li a:hover {
+    text-decoration: none;
+    color:red;
+}
+
+.img1 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(44, 136, 73, 0.1)),url(..//img/nature.jpg);
+    background-size: 100% 100%;
+}
+
+.slider, .slider ul, .slider ul li {
+    height: 710px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.slider h2 {
+    font-weight: bold;
+    margin-top: 175px;
+}
+
+.slider span {
+    padding-top: 20px;
+    color: rgb(43, 196, 101);
+}
+
+.slider a {
+    padding: 10px 40px;
+    margin-right: 10px;
+}
+
+.slider a.btn-half {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.slider a.btn-full {
+    background-color: rgb(43, 196, 101);
+    color: white;
+}
+
+.img2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)) url(..//img/myAvatar.png);
+    background-size: 100% 100%;
+}
