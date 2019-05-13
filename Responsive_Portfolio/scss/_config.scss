@@ -1,0 +1,58 @@
+// Configuration styling
+
+$primary-color: #595358;
+$secondary-color: #B5FED9;
+$show-home-image: true;
+$home-image: url("../img/space4.jpg");
+$background-opacity: 0.3;
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+@mixin background {
+    @if $show-home-image {
+        &#bg-image {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba(black, $background-opacity);
+
+            }
+        }
+
+    }
+}
+
+// Media query mixins (reponsive)
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+// Media Medium size
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+// Media Large size
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {  // Range is one after md and 1170
+        @content;
+    }
+}
+// Media Extra-Large size
+@mixin mediaXl {
+    @media screen and (min-width: 1171) {
+        @content;
+    }
+}
