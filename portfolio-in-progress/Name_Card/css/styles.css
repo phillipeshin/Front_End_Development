@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+header {
+    padding: 0;
+    background-color: transparent;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+header .menu {
+    text-align: center;
+    display: inline-block;
+}
+header .menu a {
+    color: lightcoral;
+    padding-right: 2rem;
+    text-align: right;
+    text-decoration: none;
+}
+header .menu a:hover {
+    color: white;
+}
+
+body {
+    background-image:url(../img/background.jpeg);
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    padding-top: 2rem;
+    filter: brightness(1.2);
+}
+.line {
+    text-align: center;
+    transition: all 0.5s ease-out; 
+    padding: 1rem;
+}
+    .line .x-line {
+      width: 28px;
+      height: 3px;
+      margin-left: 21rem;
+      background: lightcoral;
+      transition: all 0.5s ease-out; 
+    }
+    .line .x-line:nth-child(1) {
+        transform: rotate(45deg) translate(3px, 3px);
+    }
+    .line .x-line:nth-child(2) {
+        transform: rotate(-45deg) translate(0px, 1px);
+    }
+.name_card {
+    margin: 10rem auto;
+    padding: 10rem 1rem 1rem 3rem;
+    text-align: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+    height: 30rem;
+    width: 50rem;
+    background: linear-gradient(rgba(63, 11, 11, 0.3), rgba(0, 0, 0, 0.9)), url("../img/background2.jpg");
+    background-size: cover;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.name_card .myname {
+    font-style: bold;
+    padding-top: 2rem;
+    color: lightpink;
+    font-size: 4rem;
+}
+.name_card .myjob {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.name_card .mycity {
+    font-style: italic;
+    color: lightpink;
+    font-size: 1.5rem;
+}
+
+
+.social {
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.fa:hover {
+    color: rgba(190, 84, 84, 0.774);
+    background-color: white;
+    font-size: 3rem;
+    transition: ease-in 0.5s;
+}
+.fa {
+    border-radius: 50%;
+    padding: 1rem;
+    transition: ease-out 0.5s;
+    margin-top: 2rem;
+    border: 1px solid white;
+}
+.fa-facebook {
+    background: rgba(190, 84, 84, 0.774);
+    color: white;
+}
+.fa-linkedin {
+    background: rgba(190, 84, 84, 0.774);
+    color: white;
+}
+.fa-google {
+    background: rgba(190, 84, 84, 0.774);
+    color: white;
+}
+.fa-github {
+    background: rgba(190, 84, 84, 0.774);
+    color: white;
+}
+
+.selfie {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    margin-top: -18rem;
+    margin-left: 15rem;
+    border: 1px solid white;
+    filter: brightness(1);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
